@@ -10,7 +10,8 @@ def create_simple_agent():
     llm = ChatUpstage(model="solar-pro2", temperature=0)
     agent = create_react_agent(
         model=llm,
-        tools=[search_knowledge_base, web_search],
+        #tools=[search_knowledge_base, web_search],
+        tools=[search_knowledge_base],
         prompt=(
             "You are a helpful customer support agent. Use the available tools to search the knowledge "
             "base and web for information to help customers."

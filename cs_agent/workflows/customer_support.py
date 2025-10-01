@@ -1,3 +1,4 @@
+'''
 from typing import Any, Dict, List, Literal, Sequence, TypedDict, Annotated
 import json
 
@@ -189,7 +190,7 @@ def build_workflow():
     builder.add_node("get_customer_question", get_customer_question)
     builder.add_node("llm", llm_node)
     builder.add_node("tools", tool_node)
-    builder.add_node("escalate_to_specialist", escalate_to_specialist)
+    #builder.add_node("escalate_to_specialist", escalate_to_specialist)
     builder.set_entry_point("get_customer_id")
     builder.add_edge("get_customer_id", "get_customer_question")
     builder.add_edge("get_customer_question", "llm")
@@ -202,3 +203,4 @@ def build_workflow():
     builder.add_edge("escalate_to_specialist", END)
     checkpointer = InMemorySaver()
     return builder.compile(checkpointer=checkpointer)
+'''
