@@ -43,7 +43,7 @@ smartway_upstage/
 
 - Simple ReAct agent (prebuilt):
 ```bash
-python cli.py react --question "우리 회사 API에 접속이 잘 안되는데."
+python cli.py react --question "업스테이지 셔틀버스의 승하차 인원이 많은 노선 순으로 알려줘" 
 ```
 
 - Full workflow (custom graph with interrupts):
