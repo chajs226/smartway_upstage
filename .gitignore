@@ -59,3 +59,9 @@ index.faiss
 # LangGraph (if using local checkpoints)
 .langgraph/
 
+# Generated charts and analysis outputs
+generated_charts/
+*.png
+*.jpg
+*.jpeg
+
