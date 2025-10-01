@@ -1,0 +1,61 @@
+# macOS
+.DS_Store
+
+# Python bytecode / C extensions
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.dylib
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Packaging / build
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Logs and coverage
+logs/
+*.log
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Caches
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.pyre/
+.pytype/
+
+# IDE/editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment / secrets
+.env
+.env.*
+*.secret
+secrets.*
+
+# Optional FAISS / index artifacts (if persisted later)
+*.faiss
+*.index
+index.faiss
+
+# LangGraph (if using local checkpoints)
+.langgraph/
+
